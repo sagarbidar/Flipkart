@@ -1,0 +1,36 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Flipcart {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\sagar.shivnath\\Downloads\\chromedriver_win32(5)\\chromedriver.exe");
+	
+				
+				WebDriver driver=new ChromeDriver(); 
+				//implicity will apply globaly
+				driver.get("https://www.flipkart.com/"); //hit the url on browser
+				//click 
+				driver.findElement(By.cssSelector("input[class='_3704LK']")).click();
+				//search with mobiles
+				driver.findElement(By.cssSelector("input[class='_3704LK']")).sendKeys("mobiles");
+				//it will click 1st iteam 
+				driver.findElement(By.xpath("//div[@class='_4rR01T']")).click();
+				//it will print the prize of the item
+				driver.findElement(By.xpath("//div[@class='_30jeq3 _16Jk6d']")).getText();
+				//it will add to the card 
+				driver.findElement(By.cssSelector("button[class='_2KpZ6l _2U9uOA _3v1-ww']")).click();
+
+				
+				//Increase the quantity by 1
+				driver.findElement(By.cssSelector("button[class='_23FHuj']")).click();
+				//it will print after addition of quantity
+				System.out.println(driver.findElement(By.cssSelector("span[xpath='1']")).getText());
+				driver.close();
+				
+	}
+
+}
