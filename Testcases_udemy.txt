@@ -1,0 +1,38 @@
+Manual:
+Explore the given application https://www.udemy.com/ and write at least 15 test cases for the
+same.
+The scope of testing is limited to the following modules:
+1. Signup
+2. Course categories
+3. Payment
+4. Notifications
+
+
+///////////////
+
+1.Go to udemy wesite and search with signup 
+2.Click on signup and start filling the given deatils
+3.Go to Name box and give your name 
+4.Go to email box type your valid email
+5.Go to password box and create with the given below instrcution 
+6.If password instruction doesn't macth after clickin singup error should disply below the password box
+7.Without filling given deatils if user clicked on singup then error sms should disply below singup like pls fill the given deatils 
+8.Once user filled all the correct information then after clicking signup button user should go to home page
+9.User should be able to see the Course categories word on the home page
+10.Once user moved his mouse over a Course categories it should disply all the course categories 
+11.If user clicked on any Course categories then user able to see all courses related to the respective categorie
+12.User able to see the prize of all course and with course headline 
+13.Click on the selected course 
+14.Coure deatils should displyed with how many hours etc
+15.If user want to add to cart then Addcart option should disply on screen 
+16.If user clicked on ADDCart then it should navigate to AddCart page
+17.If user want to Buy a couse then Buy now option should disply on screen
+18.Once user clicked on Buy now that navigate to next payment page
+19.Once user navigate to the payment page the course prize should be same as previous it should show like less or high
+20.Go to Sate box and select your state from drop down ,withoult selecting state if you click payment it should not take and stae box should display with red
+21.Go to respective given payment option and click on
+22.Click one the complete payment
+23.It will navigate to opt page then enter the valid otp from your mobile 
+24.If you enter invalid otp then payment should not be done
+25.Once payment done use should get notification in above right section
+26.user should get the notification if taken cosure are updated,
